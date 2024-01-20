@@ -1,0 +1,2 @@
+# HTML e CSS: Ambientes de desenvolvimento, estrutura de arquivos e tags
+Este projeto foi desenvolvido durante o curso Oracle + Alura, tem como objetivo construir uma landing page simples com base em um projeto figma já existente, disponibilizado pelo próprio curso.
