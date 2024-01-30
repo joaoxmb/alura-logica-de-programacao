@@ -44,6 +44,7 @@ const Game = class {
     
     if (isCanceled) {
       alert(`Jogo cancelado! O número secreto era ${this.randomNumber}.`);
+      this.resetDOM();
       this.domMessage("Que pena, você estava perto!", "Não desista agora, tente novamente.", "Volte ao jogo!");
     } else {
       alert("Vamos voltar para o jogo!!");
