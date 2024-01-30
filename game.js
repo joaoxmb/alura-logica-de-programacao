@@ -36,15 +36,15 @@ const Game = class {
   }
   endGame(){
     attemptsBox.style = "display: block;";
-    this.domMessage("Parabéns!", "Você acertou o número secreto, demais!!", "Jogar novamente");
+    this.domMessage("Parabéns!", "Você acertou o número secreto!!", "Jogar novamente");
     this.completed = true;
   }
   cancelGame(){
-    const isCanceled = confirm("Você deseja realmente encerrar o jogo por aqui?");
+    const isCanceled = confirm("Você deseja encerrar realmente o jogo por aqui?");
     
     if (isCanceled) {
-      alert(`Jogo cancelado, o número secreto era ${this.randomNumber}.`);
-      this.domMessage("Que pena, você estava perto!", "Não desiste agora, tente novamente.", "Volte ao jogo!");
+      alert(`Jogo cancelado! O número secreto era ${this.randomNumber}.`);
+      this.domMessage("Que pena, você estava perto!", "Não desista agora, tente novamente.", "Volte ao jogo!");
     } else {
       alert("Vamos voltar para o jogo!!");
     }
@@ -84,7 +84,7 @@ const Game = class {
     
     if (number === this.randomNumber) {
       const attemptsQuanty = this.attempts.length;
-      alert(`Você acertou com ${attemptsQuanty} ${attemptsQuanty > 1 ? 'tentativas' : 'tentativa'}.`);
+      alert(`Você acertou o número secreto com ${attemptsQuanty} ${attemptsQuanty > 1 ? 'tentativas' : 'tentativa'}.`);
       return true;
     }
     
