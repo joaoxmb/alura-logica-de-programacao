@@ -26,7 +26,7 @@ body::before {
 }
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 1.1;
 }
 h2 {
@@ -92,6 +92,7 @@ ul li {
     position: relative;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
+    overflow-wrap: anywhere;    
 }
 .game img {
     position: absolute;
