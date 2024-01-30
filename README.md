@@ -1,7 +1,9 @@
-# Lógica de Programação - Alura
-Este repositório tem como objetivo manter as atividades desenvolvida durante o curso de Lógica de Programação da Alura + Oracle.
+# Curso de Lógica de Programação - Alura
 
-Conheça meus projetos realizados durante este curso!
+Este repositório destina-se a manter as atividades desenvolvidas durante o curso de Lógica de Programação da Alura + Oracle.
 
-- [Jogo da Adivinhação - Dialogo](https://github.com/joaoxmb/alura-logica-de-programacao/tree/dialog-game)
-  - Utilizando conceitos básicos de programação em JavaScript, esse jogo se baseia em adivinhar um número gerado aleatóriamente pelo maquina. Foi utilizado como entrada para o jogo, funções de diálogo nativa do JavaScript como: `alert()`, `confirm()`, `prompt()`.
+Conheça os projetos realizados durante este curso!
+
+- [Jogo da Adivinhação - Diálogo](https://dialog-game.vercel.app/)
+  - Este jogo, desenvolvido em JavaScript, utiliza conceitos básicos de programação. Baseia-se na tentativa de adivinhar um número gerado aleatoriamente pela máquina. Foram empregadas funções de diálogo nativas do JavaScript, como `alert()`, `confirm()` e `prompt()`.
+  - [Clique aqui para conferir a branch do projeto](https://github.com/joaoxmb/alura-logica-de-programacao/tree/dialog-game).
