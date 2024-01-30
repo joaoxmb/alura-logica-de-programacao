@@ -5,11 +5,21 @@
     color: white;
 }
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
+    background: linear-gradient(#1354a500 0%, #04183285 33.33%, #041832 66.67%, #01080E 100%);
+    background-color: #55159b !important;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: background .5s;
+}
+body.correct {
+    background-color: #13a577 !important;
+}
+body.incorrect {
+    background-color: #a51356 !important;
 }
 body::before {
     background-image: url("img/code.png");
@@ -24,59 +34,141 @@ body::before {
 }
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
-}
-h2,
-p,
-button {
-    font-family: 'Inter', sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.1;
 }
 h2 {
-    font-size: 32px;
+    font-size: 1.3rem;
     font-weight: 400;
+    margin-top: 15px;
+    color: #eaeaea;
+}
+h2 > span {
+    color: #ff7a7a;
+}
+button,
+input {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: inset 0px 0px 0px 2px #b8a0f2;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    transition: background-color .3s;
+}
+button:hover{
+    background-color: #b8a0f2;
+}
+
+input {
+    padding: 0;
+    width: 0px;
+    opacity: 0;
+    transition: all .5s;
+}
+input.active {
+    padding: 15px 30px;
+    margin-right: 10px;
+    width: 100%;
+    opacity: 1;
+}
+input:disabled {
+    box-shadow: inset 0px 0px 0px 2px #ccc;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+form {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    list-style: none;
+}
+ul li {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #b8a0f2;
 }
 
 .container {
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 24px;
-    border: 1px solid #1875E8;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-.container__conteudo {
-    display: flex;
-    align-items: center;
+.attempts {
+    margin-top: 30px;
+    opacity: 1;
+    height: auto;
+    transition: all .5s;
+    overflow: hidden;
+}
+.attempts h3 {
+    margin-bottom: 10px;
+}
+.attempts.disabled {
+    opacity: 0;
+    height: 0;
+}
+#attempts-container {
+    min-height: 39px;
+}
+
+.game {
+    width: 100%;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0px 22px 100px -32px #84848466;
+    background-color: rgb(0 0 0 / 15%);
+}
+.game img {
     position: absolute;
     bottom: 0;
+    right: 0;
+    height: 120%;
+}
+.game div:last-child {
+    position: relative;
+}
+.game div:first-child {
+    background: #8923ce8a;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
 }
 
-.container__informacoes {
-    flex: 1;
-    padding: 20px;
-}
-
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 16px;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
+@media screen and (max-width: 850px) {
+    body {
+        margin: 5% 0;
+    }
+    .game {
+        grid-template-columns: 1fr;
+    }
+    .game div:first-child {
+        border-radius: 0 0 20px 20px;
+    }
+    .game div:last-child {
+        height: 35vh;
+        grid-row: 1;
+    }
 }

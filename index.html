@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,23 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Jogo da Adivinhação - Diálogo</title>
+    <link rel="icon" type="image/x-icon" href="./img/robot.png">
 </head>
 
 <body>
     <div class="container">
-        <div class="container__conteudo">
-            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <h1>Você <span class="container__texto-azul">acertou!</span></h1>
-                    <h2>Você descobriu o número secreto!</h2>
+        <div class="game">
+            <div>
+                <h1 id="title">Jogo da Adivinhação</h1>
+                <h2 id="status"></h2>
+
+                <div class="attempts disabled">
+                    <h3>Tentativas</h3>
+                    <ul id="attempts-container">
+                    </ul>
                 </div>
+
+                <form>
+                    <input type="number" required/>
+                    <button type="submit">
+                        Iniciar Jogo
+                    </button>
+                </form>           
+            </div>
+            <div>
+                <img src="./img/ia.png" alt="robô mergulhador" class="container__imagem-robo" />
             </div>
         </div>
     </div>
-    <script src="app.js" defer></script>
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
