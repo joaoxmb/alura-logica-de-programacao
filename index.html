@@ -20,24 +20,29 @@
                 <h1 id="title">Jogo da Adivinhação</h1>
                 <h2 id="status"></h2>
 
-                <div class="attempts disabled">
-                    <h3>Tentativas</h3>
-                    <ul id="attempts-container">
-                    </ul>
-                </div>
-
                 <form>
                     <input type="number" required/>
                     <button type="submit">
                         Iniciar Jogo
                     </button>
                 </form>           
+
+                <div class="attempts disabled">
+                    <h3>Tentativas</h3>
+                    <ul id="attempts-container">
+                    </ul>
+                </div>
             </div>
             <div>
+                <div id="speak" class="disabled">
+                    <img class="off" src="./img/speaker-off-icon.svg" alt="Texto falado desativado." />
+                    <img class="on" src="./img/speaker-on-icon.svg" alt="Texto falado ativado." />
+                </div>
                 <img src="./img/ia.png" alt="robô mergulhador" class="container__imagem-robo" />
             </div>
         </div>
     </div>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=mzGh0pX5"></script>
     <script type="module" src="./app.js"></script>
 </body>
 
