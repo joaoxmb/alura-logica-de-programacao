@@ -53,7 +53,7 @@ h2 > span {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
     transition: all .3s;
 }
 
@@ -66,14 +66,14 @@ input {
     width: 100%;
     padding: 15px 30px;
     background-color: transparent;
-    outline: none;
+    outline: 2px solid #b8a0f2;
     border: none;
-    box-shadow: inset 0px 0px 0px 2px #b8a0f2;
     border-radius: 5px;
     margin-top: 30px;
     cursor: pointer;
     font-family: 'Chakra Petch', sans-serif;
     text-transform: uppercase;
+    font-size: inherit;
     transition: background-color .3s;
 }
 button:hover{
@@ -116,14 +116,13 @@ ul li {
 .game {
     width: 100%;
     min-height: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     border-radius: 20px;
     position: relative;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     box-shadow: 0px 22px 100px -32px #84848466;
     background-color: rgb(0 0 0 / 15%);
+    display: flex;
 }
 .game img {
     position: absolute;
@@ -133,9 +132,11 @@ ul li {
 }
 .game > div:last-child {
     position: relative;
+    width: 100%;
 }
 .game > div:first-child {
     position: relative;
+    width: 100%;
     background: #8923ce8a;
     border-radius: 20px;
     padding: 40px;
@@ -190,13 +191,18 @@ ul li {
         margin: 5% 0;
     }
     .game {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
     }
     .game > div:first-child {
         border-radius: 0 0 20px 20px;
     }
     .game > div:last-child {
         height: 35vh;
-        grid-row: 1;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    #speak{
+        left: 0;
     }
 }

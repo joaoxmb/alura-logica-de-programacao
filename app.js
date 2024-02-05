@@ -178,7 +178,7 @@ function write(element, text) {
 function speak(text) {
   if (game.speak) {
     const formatedText = text.replace(/<[^>]*>/g, '');
-    responsiveVoice.speak(formatedText, "Brazilian Portuguese Female", {rate: 1.3});
+    responsiveVoice.speak(formatedText, "Brazilian Portuguese Female", {rate: 1});
   }
 }
 
