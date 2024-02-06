@@ -71,14 +71,14 @@ function checkNumber(number) {
     }
     
     if (compare < 4) {
-      write(title, 'Passou raspando feito um tiro!');
+      write(title, 'Passou raspando!');
     }
   }
   const victoryMessage = (attemptsQuanty) => {
     bodyFeedback(true);
 
     if (attemptsQuanty === 1) {
-      write(statusBar, `Deus! Me conte, como você fez isso? Você acertou com ${attemptsQuanty} tentativa.`);
+      write(statusBar, `Deus! Me conte, como você fez isso? Você acertou com 1 tentativa.`);
       return;
     }
     if (attemptsQuanty > parseInt(game.max / 8)) {
