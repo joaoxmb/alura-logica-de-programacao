@@ -25,40 +25,41 @@ body {
   width: 100%;
   max-width: 1100px;
   min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.apresentation {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 50px;
-  padding: 20px;
-  position: relative;
-  margin: 0 auto;
 }
 
-h1 {
+.apresentation__content--title {
   color: var(--color-text-primary);
   font-size: 36px;
   font-weight: 400;
   line-height: 56px; /* 155.556% */ 
   font-family: 'Krona One', sans-serif;
 }
-
-h1 span {
+.apresentation__content--title span {
   color: var(--colored-primary);
 }
-
-p {
+.apresentation__content p {
   color: var(--color-text-primary);
   font-weight: 400;
   margin-top: 40px;
   margin-bottom: 50px;
 }
-
-.buttons {
+.apresentation__content--buttons {
   display: flex;
   gap: 50px;
 }
-
-a {
+.apresentation__content--buttons a {
   width: 100%;
   padding: 7px;
   border-radius: 16px;
@@ -71,20 +72,22 @@ a {
   font-size: 1rem;
   transition: color .3s;
 }
-
-a:hover {
+.apresentation__content--buttons a:hover {
   color: var(--color-text-primary);
 }
 
-img {
+.apresentation__photo img {
   width: 100%;
 }
 
 @media screen and (max-width: 750px){
-  .container {
+  .apresentation {
     grid-template-columns: 1fr;
   }
-  .container > *:last-child{
+  .apresentation__photo{
     grid-row: 1;
+  }
+  .apresentation__photo img {
+    padding: 50px 50px 0 50px;
   }
 }
