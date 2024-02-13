@@ -7,30 +7,65 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="container">
-    <div class="apresentation">
-      <div class="apresentation__content">
-        <h1 class="apresentation__content--title">Eleve seu negócio digital a outro nível <span> com um Front-end de qualidade!</span></h1>
-        <p>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar__items">
+          <li class="navbar__items--item">
+            <a href="#">Home</a>
+          </li>
+          <li class="navbar__items--item">
+            <a href="#about">Sobre mim</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="content" class="container">
+    <main>
+      <section id="apresentation">
+        <h1 class="section--title">Eleve seu negócio digital a outro nível <span> com um Front-end de qualidade!</span></h1>
+        <p class="apresentation--paragraph">
           Olá! Sou João Victor, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
         </p>
-        <div class="apresentation__content--buttons">
-          <a href="https://www.instagram.com/joao.filtro/" target="_blank">
-            Instagram
-          </a>
-          <a href="https://github.com/joaoxmb/" target="_blank">
-            GitHub
-          </a>
+        <div class="apresentation__social">
+          <h2 class="apresentation__social--title">Acesse minhas redes:</h2>
+          <div class="apresentation__social--btns">
+            <a href="https://github.com/joaoxmb/" target="_blank">
+              <img class="apresentation__social__btns--icon" src="./images/github-logo.svg" alt="Github Logo">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/joaoxmb/" target="_blank">
+              <img class="apresentation__social__btns--icon" src="./images/linkedin-logo.svg" alt="LinkedIn Logo">
+              LinkedIn
+            </a>    
+          </div>
         </div>
-      </div>
-      <div class="apresentation__photo">
-        <picture>
-          <source media="(min-width: 601px)" srcset="./images/Imagem@2x.png" />
-          <source media="(min-width: 992px)" srcset="./images/Imagem@3x.png" />
-          <img src="./images/Imagem.png" alt="Foto de uma estudante utilizando seu Notebook"/>
-        </picture>
-      </div>
+      </section>
+      <section id="about">
+        <h1 class="section--title">Sobre mim</h1>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+        </p>
+        <p>
+          Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol parela maxime infena. Excepteur sint occaecat cupidatat non.
+        </p>
+      </section>
+    </main>
+    <aside>
+      <picture class="aside__photo">
+        <source media="(min-width: 601px)" srcset="./images/Imagem@2x.png" />
+        <source media="(min-width: 992px)" srcset="./images/Imagem@3x.png" />
+        <img src="./images/Imagem.png" alt="Foto de uma estudante utilizando seu Notebook"/>
+      </picture>
+    </aside>
+  </div>
+  <footer>
+    <div class="container">
+      <p class="footer--paragraph">
+        Desenvolvido por <a href="https://github.com/joaoxmb/" target="_blank">@joaoxmb</a>.
+      </p>
     </div>
-  </main>
+  </footer>
 </body>
 </html>
