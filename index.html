@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>João Victor - Portfólio</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="shortcut icon" href="./images/Imagem.png" type="image/x-icon">
 </head>
 <body>
   <header>
     <div class="container">
       <nav class="navbar">
         <ul class="navbar__items">
-          <li class="navbar__items--item">
-            <a href="./index.html">Home</a>
+          <li class="navbar__items--item active" data-section="apresentation">
+            <a href="#">Home</a>
           </li>
-          <li class="navbar__items--item">
-            <a href="./index.html#about">Sobre mim</a>
+          <li class="navbar__items--item" data-section="about">
+            <a href="#about">Sobre mim</a>
           </li>
           <li class="navbar__items--item">
             <a href="./curriculo.html">Currículo</a>
@@ -48,13 +50,13 @@
       <section id="about">
         <h1 class="section--title">Sobre mim</h1>
         <p>
-          Sou um programador entusiasta com habilidades sólidas em JavaScript, HTML e CSS, apaixonado por transformar conceitos em soluções digitais interativas. Tenho experiência em desenvolvimento web e na criação de filtros para o Instagram, além de uma forte motivação para aprender e crescer constantemente na área da programação.
+          Sou um programador entusiasta com habilidades sólidas em <strong>JavaScript</strong>, <strong>HTML</strong> e <strong>CSS</strong>, apaixonado por transformar conceitos em soluções digitais interativas. Tenho experiência em desenvolvimento web e na criação de <strong>filtros para o Instagram</strong>, além de uma forte motivação para aprender e crescer constantemente na área da programação.
         </p>
         <p>
-          Ampliei meus conhecimentos e habilidades para incluir frameworks como React, React Native, Next.js e Vue.js. Além disso, tenho experiência com Bootstrap, jQuery, HTML5, CSS3, JSON, Git & GitHub, TypeScript e Node.js.
+          Ampliei meus conhecimentos e habilidades para incluir frameworks como <strong>React</strong>, <strong>React Native</strong>, <strong>Next.js</strong>, <strong>Vue.js</strong>, <strong>Vite</strong>. Além disso, tenho experiência com <strong>Bootstrap</strong>, <strong>jQuery</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JSON</strong>, <strong>Git & GitHub</strong>, <strong>TypeScript</strong> e <strong>Node.js</strong>.
         </p>
         <p>
-          No campo do design, estou familiarizado com o Figma para design responsivo de UI/UX, bem como com o Adobe e o Spark Ar. Estou sempre buscando novas oportunidades para expandir minhas habilidades e contribuir com soluções inovadoras no área da programação.
+          No campo do design, estou familiarizado com o <strong>Figma</strong> para design responsivo de UI/UX, bem como com o <strong>Adobe</strong> e o <strong>Spark Ar</strong>. Estou sempre buscando novas oportunidades para expandir minhas habilidades e contribuir com soluções inovadoras no área da programação.
         </p>
       </section>
     </main>
@@ -73,5 +75,6 @@
       </p>
     </div>
   </footer>
+  <script src="./active-section.js"></script>
 </body>
 </html>
