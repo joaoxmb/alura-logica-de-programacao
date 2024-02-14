@@ -79,5 +79,6 @@ aside {
   .aside__photo img{
     position: relative;
     padding: 0 80px;
+    top: 41px;
   }
 }
